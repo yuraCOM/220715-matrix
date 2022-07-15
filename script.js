@@ -59,9 +59,14 @@ const C = document.querySelector("canvas"),
 // let str = "А+Б0В-Г1Д=Е2Ё Ж3З И4Й К5Л М6Н О7П Р8С Т9У Ф!Х Ц?Ч Ш.ЩЪ,Ы Ь:ЭЮ;Я",
 //     matrix = str.split("");
 
+// let matrix = (
+//     'abcdefghijklmnopqrstuvwxyz' +
+//     'abcdefghijklmnopqrstuvwxyz'.toUpperCase() +
+//     '0123456789' +
+//     '!@#$%^&*-+'
+// ).split('');
+
 let matrix = (
-    'abcdefghijklmnopqrstuvwxyz' +
-    'abcdefghijklmnopqrstuvwxyz'.toUpperCase() +
     '0123456789' +
     '!@#$%^&*-+'
 ).split('');
@@ -85,7 +90,7 @@ function draw() {
     }
 }
 
-setInterval(draw, 123);
+setInterval(draw, 55);
 
 window.addEventListener("resize", () => location.reload());
 
